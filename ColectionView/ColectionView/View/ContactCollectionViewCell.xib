@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m8U-MI-TOC">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m8U-MI-TOC" customClass="ContactCollectionViewCell" customModule="ColectionView" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="213" height="210"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ygN-sy-X0t">
@@ -38,6 +38,10 @@
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="213" height="210"/>
+            <connections>
+                <outlet property="contactName" destination="izT-bz-yOa" id="qw3-mu-P90"/>
+                <outlet property="contactPhoto" destination="UWc-0n-DuH" id="gk8-F6-OpP"/>
+            </connections>
             <point key="canvasLocation" x="84.782608695652186" y="86.383928571428569"/>
         </collectionViewCell>
     </objects>
