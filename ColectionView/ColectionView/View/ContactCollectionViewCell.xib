@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="213" height="210"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWc-0n-DuH">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageContact" translatesAutoresizingMaskIntoConstraints="NO" id="UWc-0n-DuH">
                         <rect key="frame" x="0.0" y="0.0" width="213" height="150"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izT-bz-yOa">
@@ -45,4 +45,7 @@
             <point key="canvasLocation" x="84.782608695652186" y="86.383928571428569"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ImageContact" width="100" height="100"/>
+    </resources>
 </document>
