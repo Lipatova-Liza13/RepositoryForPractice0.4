@@ -14,8 +14,11 @@ class TelephoneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cellWidthHeight()
         configureCollectionView()
+        cellWidthHeight()
+        
+        loadContacts()
+        PhoneColectionView.register(ContactCollectionViewCell.nib(), forCellWithReuseIdentifier: ContactCollectionViewCell.identifier)
     }
     private func cellWidthHeight() {
            let viewWidth = view.bounds.width
@@ -55,25 +58,37 @@ extension TelephoneViewController:  UICollectionViewDelegate, UICollectionViewDa
     }
     
     private func loadContacts() {
-        /*
-        let avatar1 = UIImage(named: "Watermelon")
-        let avatar2 = UIImage(named: "Blouse")
-        let avatar3 = UIImage(named: "Trousers")
-
-        guard let shop1 = Shop(avatar: avatar1, itemName: "Watermelon", price: "789") else {
-            fatalError("Unable to instantiate item1")
+        
+        let avatar1 = UIImage(named: "tyrionlannister")
+        let avatar2 = UIImage(named: "VerkaSerduchka")
+        let avatar3 = UIImage(named: "smurf")
+        let avatar4 = UIImage(named: "tyrionlannister")
+        let avatar5 = UIImage(named: "Pushkin")
+        let avatar6 = UIImage(named: "angelaMerkel")
+        guard let cont1 = Contact(photo: avatar1, number: "+(380)959677839", name: "Tyrion Lannister") else {
+            fatalError("Unable to instantiate contact1")
         }
 
-        guard let shop2 = Shop(avatar: avatar2, itemName: "Blouse", price: "340") else {
-            fatalError("Unable to instantiate item2")
+        guard let cont2 = Contact(photo: avatar2, number: "+(380)959677839", name: "Verka Serduchka") else {
+            fatalError("Unable to instantiate contact2")
         }
 
-        guard let shop3 = Shop(avatar: avatar3, itemName: "Trousers", price: "40") else {
-            fatalError("Unable to instantiate item3")
+        guard let cont3 = Contact(photo: avatar3, number: "+(380)959677839", name: "Smurf") else {
+            fatalError("Unable to instantiate contact3")
+        }
+        guard let cont4 = Contact(photo: avatar4, number: "+(380)959677839", name: "Tyrion Lannister") else {
+            fatalError("Unable to instantiate contact4")
         }
 
-        shops += [shop1, shop2, shop3]
- */
+        guard let cont5 = Contact(photo: avatar5, number: "+(380)959677839", name: "Tyrion Lannister") else {
+            fatalError("Unable to instantiate contact5")
+        }
+
+        guard let cont6 = Contact(photo: avatar6, number: "+(380)959677839", name: "Angela Merkel") else {
+            fatalError("Unable to instantiate contact6")
+        }
+        contacts += [cont1, cont2, cont3, cont4, cont5, cont6]
+ 
     }
     
     

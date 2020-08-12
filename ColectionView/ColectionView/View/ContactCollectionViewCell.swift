@@ -10,10 +10,10 @@ import UIKit
 
 class ContactCollectionViewCell: UICollectionViewCell {
     //MARK:Сonnect nib file
-    static let identifier = "ContactTableViewCell"
+    static let identifier = "ContactCollectionViewCell"
     
     static func nib() -> UINib {
-        return UINib(nibName: "ContactTableViewCell", bundle: nil)
+        return UINib(nibName: "ContactCollectionViewCell", bundle: nil)
     }
     @IBOutlet weak var contactPhoto: UIImageView!
     @IBOutlet weak var contactName: UILabel!
