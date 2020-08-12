@@ -15,10 +15,11 @@ class Contact {
     
     init? (photo : UIImage, number : String, name : String){
         //MARK: check
+        
         guard !(number.range(of: "\\(\\+380\\)[0-9]{9}", options: .regularExpression) == nil)else {
             return nil}
         
-        guard !number.isEmpty else {
+        guard !name.isEmpty else {
             return nil
         }
         
