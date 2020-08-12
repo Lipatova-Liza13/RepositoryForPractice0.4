@@ -9,11 +9,11 @@
 import UIKit
 
 class Contact {
-    let photo : UIImage
+    let photo : UIImage?
     let number : String
     let name : String
     
-    init? (photo : UIImage, number : String, name : String){
+    init? (photo : UIImage?, number : String, name : String){
         //MARK: check
         
         guard !(number.range(of: "\\(\\+380\\)[0-9]{9}", options: .regularExpression) == nil)else {
