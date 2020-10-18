@@ -19,6 +19,8 @@ class TelephoneViewController: UIViewController {
         
         loadContacts()
         PhoneColectionView.register(ContactCollectionViewCell.nib(), forCellWithReuseIdentifier: ContactCollectionViewCell.identifier)
+        PhoneColectionView?.reloadData()
+
     }
     private func cellWidthHeight() {
            let viewWidth = view.bounds.width
@@ -91,5 +93,16 @@ extension TelephoneViewController:  UICollectionViewDelegate, UICollectionViewDa
  
     }
     
+    /*@IBAction func unwindToShopList(sender: UIStoryboardSegue) {
+                 if let sourceViewController = sender.source as? NewContactViewController, let contact = sourceViewController.contact {
+                     // Add a new meal.
+                     let newIndexPath = IndexPath(row: contacts.count, section: 0)
+                     contacts.append(contact)
+                    PhoneColectionView.insertRows(at: [newIndexPath], with: .automatic)//animation
+                 }
+             }*/
+    @IBAction func addNewItem(_ sender: Any) {
+        
+    }
     
 }
